@@ -1,8 +1,81 @@
 body {
-    background-color: #2E7516;
+    background-color: whitesmoke;
+    padding: 25px;
+    text-align: center;
+    color: black;
+    }
+
+  
+  header {
+    background-color: black;
     padding: 25px;
     text-align: center;
     color: whitesmoke;
-    
-}
+  }
+  
+  nav {
+    background-color: grey;
+    margin: 10px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid black;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  /* unvisited link */
+  a:link {
+    color: #6d7a74;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #93facb;
+    background-color: goldenrod;
+    padding: 2px;
+  }
+  
+  /* selected link */
+  a:active {
+    color: orange;
+  }
+  
+  main {
+    background-color: wheat;
+  }
+  
+  footer {
+    background-color: whitesmoke;
+    padding: 25px;
+    text-align: center;
+    color: black;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 50%;
+    background-color: white;
+    border: 1px solid black;
+  }
+  
+  th {
+    background-color: #487a64;
+    color: white;
+  }
+  
+  td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+ 
+
+
 
