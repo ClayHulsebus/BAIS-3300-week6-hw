@@ -13,10 +13,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./android-chrome-192x192.png"> 
+    <link rel="icon" type="image/png" sizes="512x512" href="./android-chrome-512x512.png">   
     <title>Clay Hulsebus</title>
+    <div class="cookie-popup">
+      <p>This website uses cookies to enhance user experience. By using this website, you consent to the use of cookies in accordance with our <a href="cookie-policy.html">Cookie Policy</a>.</p>
+      <button class="cookie-accept">Accept</button>
+  </div>
     <link rel="stylesheet" href="stylesheet.css">
   </head>
-  <body>
+  <body class="wrapper">
+    <script>
+      var cookiePopup = document.querySelector('.cookie-popup');
+      var cookieAccept = document.querySelector('.cookie-accept');
+  
+      cookieAccept.addEventListener('click', function() {
+      cookiePopup.style.display = 'none';
+      document.cookie = 'cookieAccepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT';
+      });
+  
+      if (document.cookie.indexOf('cookieAccepted=true') > -1) {
+      cookiePopup.style.display = 'none';
+      }
+      </script>
     <header>Clay Hulsebus</header>
     <nav>
       <a href="./resume.html"> Resume </a>
@@ -40,37 +62,29 @@
     <table>
       <thead>
         <tr>
-            <td>PlayerName</td>
-            <td>Status</td>
-            <td>Position</td>
-            <td>Good?</td>
+            <td>Class</td>
+            <td>Description</td>
+            <td>Professor</td>
+            
         </tr>
       </thead>
 
         <tbody>
           <tr>
-            <td>CJ Beathard</td>
-            <td>Junior</td>
-            <td>Quarterback</td>
-            <td>Yes</td>
+            <td>Database Management</td>
+            <td>Basics of SQL</td>
+            <td>Kristina Bigsby</td>  
           </tr>
           <tr>
-            <td>Marshall Koehn</td>
-            <td>Senior</td>
-            <td>Kicker</td>
-            <td>Yes</td>
+            <td>Data Wrangling</td>
+            <td>Basics of R</td>
+            <td>Mike Colbert</td>
           </tr>
           <tr>
-            <td>Jerminic Smith</td>
-            <td>Freshman</td>
-            <td>Wide Receiver</td>
-            <td>Yes</td>
+            <td>Operations Management</td>
+            <td>Operations Optimization</td>
+            <td>Renato De Matta</td>
           </tr>
-          <tr>
-            <td>Melvin Spears</td>
-            <td>Senior</td>
-            <td>Defensive End</td>
-            <td>No</td>
           </tr>
         </tbody>
       </table>
@@ -82,7 +96,9 @@
        <p>&nbsp;</p>
        </main> 
        <footer> 
-        &copy; Clay Hulsebus, 2023 
+        &copy; Clay Hulsebus, 2023
+        <a href="termsandconditions.html">Terms and Conditions</a><br>
+        <a href="cookiepolicy.html">Cookie Policy</a> 
       </footer> 
   </body> 
     </html>
